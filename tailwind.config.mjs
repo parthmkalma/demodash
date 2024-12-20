@@ -7,6 +7,11 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        inter: ["Inter", "Poppins", "sans-serif"],
+        Ubuntu: ["Ubuntu", "Poppins", "sans-serif"],
+        Nunito: ["Nunito", "Poppins", "sans-serif"],
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
