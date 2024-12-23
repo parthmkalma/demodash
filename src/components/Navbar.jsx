@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   Menu,
   MessageSquare,
@@ -11,6 +11,14 @@ import {
 } from "lucide-react";
 
 export function Navbar({ isCollapsed }) {
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true); // Set state once the component is mounted on the client
+  }, []);
+
+  if (!isClient) return null; // Avoid rendering during SSR
+
   return (
     <header
       className={`flex items-center justify-between px-6 h-16 bg-white shadow-md transition-all duration-300 ${

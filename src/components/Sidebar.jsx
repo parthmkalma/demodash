@@ -26,13 +26,13 @@ const NavItem = ({ href, icon: Icon, label, isActive, isCollapsed }) => {
       className={`flex items-center gap-3 px-4 py-2.5  rounded-lg text-[15px] transition-all ${
         isActive
           ? "bg-blue-600 text-white"
-          : "text-gray-600 hover:bg-blue-50 hover:text-blue-600"
+          : "text-gray-600 hover:bg-blue-50 hover:text-blue-600 "
       }`}
     >
       <Icon
-        className={`transition-all ${
-          isCollapsed ? "h-5 w-5" : "h-6 w-6"
-        } ${isActive ? "text-white" : "text-gray-600"}`}
+        className={`transition-all ${isCollapsed ? "h-5 w-5" : "h-6 w-6"} ${
+          isActive ? "text-white" : "text-gray-600"
+        }`}
       />
       {!isCollapsed && <span className="font-medium">{label}</span>}
     </Link>

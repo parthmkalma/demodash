@@ -11,6 +11,7 @@ export default {
         inter: ["Inter", "Poppins", "sans-serif"],
         Ubuntu: ["Ubuntu", "Poppins", "sans-serif"],
         Nunito: ["Nunito", "Poppins", "sans-serif"],
+        poppins: ["Poppins", "sans-serif"],
       },
       colors: {
         background: "var(--background)",
